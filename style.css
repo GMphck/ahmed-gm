@@ -44,6 +44,7 @@ header
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1.5em 0;
 }
 
 .logo 
@@ -67,8 +68,7 @@ header
     letter-spacing: 1px;
     margin-left: 5em;
     font-weight: 100;
-    font-size: 1.1em
-    
+    font-size: 1.1em    
 }
 
 .navigation a:hover
@@ -563,12 +563,14 @@ header
     .navigation.responsive {
         display: flex;
         flex-direction: column;
+        padding: 0;
         position: absolute;
         top: 30px;
         left: 0;
         background-color: #200554;
         width: 100%;
         z-index: 1;
+        padding-right: 40px;
     }
 
     .navigation.responsive a 
@@ -577,6 +579,11 @@ header
         text-align: center;
         color: #fff;
         text-decoration: none;
+    }
+
+    .navigation.responsive .icon
+    {
+        margin-left: 60px;
     }
 
     .main
